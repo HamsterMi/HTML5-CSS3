@@ -6,12 +6,16 @@
 /* * {
   border: 1px solid rgb(53, 45, 30);
 } */
-.header {
+.main-header {
   width: 100%;
-}
-.main__header {
   /* может что-то еще нужно прописать для изборажения?! */
-  background-image: url(../img/header-background.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(17, 17, 17, 0.7),
+      rgba(17, 17, 17, 0.7)
+    ),
+    url(../img/header-background.png);
+
   box-sizing: border-box;
   min-height: 1024px;
   padding: 40px 150px;
@@ -31,7 +35,10 @@
   display: flex;
   align-items: center;
 }
-/* прописать класс svg */
+
+.logo-icon {
+  fill: #ffffff;
+}
 
 .logo-title {
   text-transform: capitalize;
@@ -87,6 +94,7 @@
   margin-top: 285px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .slider-section__link {
@@ -94,14 +102,17 @@
   width: 40px;
   height: 73px;
   margin-top: 90px;
+  position: absolute;
 }
 
 .slider-section__link_right {
   transform: rotate(180deg);
+  right: 0px;
 }
 
 .slider-section__slider-content {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   padding: 0 475px;
@@ -148,9 +159,154 @@
 
 .pagination {
   display: flex;
+  align-items: flex-end;
+}
+
+.slider-section__pagination {
+  margin: 0 auto;
 }
 
 .pagination__item {
-  border: 1px solid #000;
+  border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 50px;
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  margin: 0 5px;
+  background-clip: padding-box;
+}
+
+.pagination__item:hover {
+  border: 2px solid #d3c1ad;
+  background-color: transparent;
+}
+
+.main {
+  width: 100%;
+}
+
+.services {
+  width: 100%;
+  min-height: 373px;
+  display: flex;
+}
+
+.main__services {
+  padding: 80px 378px;
+  box-sizing: border-box;
+}
+
+.services__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 266px;
+  margin: 0 15px;
+}
+
+.services__item:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: 0 auto;
+  align-self: flex-end;
+}
+
+.services__item:hover .service-icon {
+  fill: #c7b299;
+}
+
+.services__item:hover .service-title {
+  color: #c7b299;
+}
+
+.service-icon {
+  fill: #312828;
+}
+
+.service-title {
+  width: 100%;
+  text-align: center;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 22px;
+  font-weight: 400;
+}
+.service-text {
+  text-align: center;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.realization {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fbfaf8;
+  padding-top: 83px /* 345px 0px 345px */;
+  box-sizing: border-box;
+  background-image: url(../img/browser-center.png), url(../img/browser-left.png),
+    url(../img/browser-right.png);
+  background-position: bottom center, bottom left 345px, bottom right 345px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.realization__title {
+  width: 100%;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.realization__text {
+  width: 757px;
+  margin: 0 auto;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+}
+
+.wordpress {
+  width: 100%;
+  min-height: 150px;
+  padding: 38px 375px;
+  box-sizing: border-box;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.wordpress__text_top {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 400;
+  /* Text style for "Waxom" */
+  color: #c7b299;
+}
+.wordpress__text_bottom {
+  color: #615855;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+.gallery{
+  width: 100%;
+  min-height: 1160px;
+  padding: 80px 375px;
 }
