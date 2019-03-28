@@ -43,11 +43,10 @@
 .logo-title {
   text-transform: capitalize;
   color: #ffffff;
-  /*  правильно подключить шрифты */
-  font-family: Raleway;
+  font-family: 'Raleway','Arial', sans-serif;
   font-size: 34px;
   font-weight: 400;
-  letter-spacing: -1.36px;
+ /*  letter-spacing: -1.36px; */
 }
 
 .main-header__main-nav {
@@ -67,14 +66,14 @@
 .menu-list__item {
   margin-right: 30px;
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: 'Montserrat','Arial', sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
 
 .menu-list__nav-link {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: 'Montserrat','Arial', sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
@@ -121,21 +120,21 @@
 
 .slider-title_size-medium {
   color: #ffffff;
-  font-family: Raleway;
+  font-family: 'Raleway','Arial', sans-serif;
   font-size: 36px;
   font-weight: 500;
 }
 
 .slider-title_size-big {
   color: #ffffff;
-  font-family: "Raleway - Extra Bold";
+  font-family: 'Raleway','Arial', sans-serif;
   font-size: 52px;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .slider-title_size-small {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: 'Montserrat','Arial', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -145,9 +144,9 @@
   display: block;
   background-color: #998675;
   color: #ffffff;
-  font-family: "Raleway - Extra Bold";
+  font-family: 'Raleway','Arial', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 23px;
   text-transform: uppercase;
   padding: 21px 38px;
@@ -232,14 +231,14 @@
   width: 100%;
   text-align: center;
   color: #555555;
-  font-family: "Raleway - Semi Bold";
+  font-family: 'Raleway','Arial', sans-serif;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .service-text {
   text-align: center;
   color: #8c8c8c;
-  font-family: Montserrat;
+  font-family: 'Montserrat','Arial', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -263,9 +262,9 @@
 .realization__title {
   width: 100%;
   color: #555555;
-  font-family: "Raleway - Semi Bold";
+  font-family: 'Raleway','Arial', sans-serif;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -273,7 +272,7 @@
   width: 757px;
   margin: 0 auto;
   color: #8c8c8c;
-  font-family: Montserrat;
+  font-family: 'Montserrat','Arial', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -291,7 +290,7 @@
 
 .wordpress__text_top {
   color: #ffffff;
-  font-family: Raleway;
+  font-family: 'Raleway','Arial', sans-serif;
   font-size: 28px;
   font-weight: 400;
   /* Text style for "Waxom" */
@@ -299,7 +298,7 @@
 }
 .wordpress__text_bottom {
   color: #615855;
-  font-family: Montserrat;
+  font-family: 'Montserrat','Arial', sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
