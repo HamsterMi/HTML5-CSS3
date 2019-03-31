@@ -1,3 +1,33 @@
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/montserrat-regular.ttf);
+}
+
+@font-face {
+  font-family: montserrat-extralight;
+  src: url(../fonts/montserrat-extralight.ttf);
+}
+
+@font-face {
+  font-family: raleway-extrabold;
+  src: url(../fonts/raleway-extrabold.ttf);
+}
+
+@font-face {
+  font-family: raleway;
+  src: url(../fonts/raleway-regular.ttf);
+}
+
+@font-face {
+  font-family: raleway-semibold;
+  src: url(../fonts/raleway-semibold.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto-regular.ttf);
+}
+
 .container {
   width: 1920px;
   margin: 0 auto;
@@ -40,8 +70,17 @@
 .main-header__logo-link:hover .logo-icon {
   fill: #c7b299;
 }
+
 .main-header__logo-link:hover .logo-title {
   color: #c7b299;
+}
+
+.main-header__logo-link:active .logo-icon {
+  fill: #a48d72;
+}
+
+.main-header__logo-link:active .logo-title {
+  color: #a48d72;
 }
 
 .logo-icon {
@@ -51,9 +90,8 @@
 .logo-title {
   text-transform: capitalize;
   color: #ffffff;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "raleway", "Arial", sans-serif;
   font-size: 34px;
-  font-weight: 400;
 }
 
 .main-header__main-nav {
@@ -72,21 +110,19 @@
 
 .menu-list__item {
   margin-right: 30px;
-  color: #ffffff;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .menu-list__nav-link {
   color: #ffffff;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "montserrat", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 300;
 }
 
 .menu-list__nav-link:hover {
   color: #c7b299;
+}
+.menu-list__nav-link:active {
+  color: #a48d72;
 }
 
 .cart-button {
@@ -101,6 +137,9 @@
 
 .nav-icon:hover {
   fill: #c7b299;
+}
+.nav-icon:active {
+  fill: #a48d72;
 }
 
 .searh-form {
@@ -126,8 +165,11 @@
   flex-wrap: wrap;
   position: relative;
 }
-
 .slider-section__link {
+  display: block;
+}
+
+.slider-section_item {
   display: block;
   border-bottom: 50px solid #d6d8db;
   border-right: 2px solid #d6d8db;
@@ -136,7 +178,7 @@
   top: 120px;
 }
 
-.slider-section__link::before {
+.slider-section_item::before {
   content: "";
   display: block;
   border-bottom: 50px solid #d6d8db;
@@ -152,10 +194,10 @@
   right: 0px;
 }
 
-.slider-section__link:hover::before  {
+.slider-section__link:hover .slider-section_item::before {
   border-color: #d3c1ad;
 }
-.slider-section__link:hover  {
+.slider-section__link:hover .slider-section_item {
   border-color: #d3c1ad;
 }
 
@@ -171,23 +213,20 @@
 
 .slider-title_size-medium {
   color: #ffffff;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "raleway", "Arial", sans-serif;
   font-size: 36px;
-  font-weight: 500;
 }
 
 .slider-title_size-big {
   color: #ffffff;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "raleway-extrabold", "Arial", sans-serif;
   font-size: 52px;
-  font-weight: 800;
 }
 
 .slider-text {
   color: #ffffff;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "montserrat", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 300;
   line-height: 24px;
   margin-bottom: 0;
   text-align: center;
@@ -199,9 +238,8 @@
   background-color: #998675;
   border-radius: 5px;
   color: #ffffff;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "raleway-extrabold", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 800;
   line-height: 23px;
   text-transform: uppercase;
   padding: 15px 38px;
@@ -248,6 +286,11 @@
   background-color: transparent;
 }
 
+.pagination__item:active {
+  border: 2px solid #d3c1ad;
+  background-color: #d3c1ad;
+}
+
 .main {
   width: 100%;
 }
@@ -292,6 +335,18 @@
 .services__item:hover:after {
   background-color: #c7b299;
 }
+
+.services__item:active .service-icon {
+  fill: #998675;
+}
+
+.services__item:active .service-title {
+  color: #998675;
+}
+
+.services__item:active:after {
+  background-color: #998675;
+}
 .service-icon {
   fill: #555555;
 }
@@ -300,15 +355,14 @@
   width: 100%;
   text-align: center;
   color: #555555;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "raleway-semibold", "Arial", sans-serif;
   font-size: 22px;
-  font-weight: 600;
   margin-top: 30px;
 }
 .service-text {
   text-align: center;
   color: #8c8c8c;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "montserrat", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -333,7 +387,7 @@
 .realization__title {
   width: 100%;
   color: #555555;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "raleway-semibold", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -344,7 +398,7 @@
   width: 757px;
   margin: 0 auto;
   color: #8c8c8c;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -364,7 +418,7 @@
 
 .wordpress__text_top {
   color: #ffffff;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "raleway", "Arial", sans-serif;
   font-size: 28px;
   font-weight: 400;
   margin: 0;
@@ -375,7 +429,7 @@
 }
 .wordpress__text_bottom {
   color: #615855;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 300;
   margin: 8px 0 0 0;
