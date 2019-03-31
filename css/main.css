@@ -509,6 +509,10 @@
   font-weight: 300;
   line-height: 21px;
 }
+
+.gallery-elem {
+  margin-bottom: 30px;
+}
 .gallery-elem__search {
   display: flex;
   flex-direction: column;
@@ -614,7 +618,7 @@
 }
 
 .gallery-link {
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
 }
 
 .video {
