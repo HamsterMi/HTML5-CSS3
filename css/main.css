@@ -32,8 +32,8 @@
   width: 1920px;
   margin: 0 auto;
 }
-/* 
-* {
+
+/* * {
   border: 1px solid #000;
 } */
 .main-header {
@@ -372,36 +372,44 @@
 .realization {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   background-color: #fbfaf8;
   padding: 83px 0 522px 0;
   padding-top: 83px;
   box-sizing: border-box;
+  justify-content: center;
   background-image: url(../img/browser-center.png), url(../img/browser-left.png),
     url(../img/browser-right.png);
   background-position: bottom center, bottom left 345px, bottom right 345px;
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
-.realization__title {
-  width: 100%;
+.section-title {
   color: #555555;
   font-family: "raleway-semibold", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 600;
+}
+
+.realization__title {
+  width: 100%;
   text-align: center;
   margin-bottom: 24px;
 }
 
-.realization__text {
-  width: 757px;
-  margin: 0 auto;
+.section-text {
   color: #8c8c8c;
   font-family: "montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
+}
+
+.realization__text {
+  width: 757px;
+  margin: 0 auto;
+
   text-align: center;
 }
 
@@ -434,4 +442,164 @@
   font-weight: 300;
   margin: 8px 0 0 0;
   width: 100%;
+}
+
+.gallery {
+  width: 100%;
+  /* min-height: 1160px; */
+  padding: 80px 375px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.gallery__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.gallery__text {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.gallery-menu {
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+  margin: 40px auto;
+  padding: 0;
+  width: 100%;
+}
+
+.gallery-menu__items {
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  background-color: transparent;
+  margin-right: 10px;
+  padding: 8px 25px;
+}
+.gallery-menu__items:hover {
+  background-color: #998675;
+}
+.gallery-menu__items:hover .gallery-menu__link {
+  color: #ffffff;
+}
+
+.gallery-menu__items:active .gallery-menu__link {
+  color: #111111;
+}
+.gallery-menu__link {
+  text-align: center;
+  display: block;
+  color: #8c8c8c;
+  font-family: "montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.gallery-elem__search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  position: relative;
+}
+.gallery-elem__img {
+  display: block;
+}
+
+.gallery-elem__text-wrap {
+  background-color: #fbfaf8;
+  position: relative;
+  padding: 30px 0 30px 30px;
+  box-sizing: border-box;
+}
+
+.gallery-elem__text-wrap::before {
+  content: "";
+  border: 15px solid transparent;
+  border-bottom: 10px solid #fbfaf8;
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
+
+.gallery-elem__title {
+  color: #c7b299;
+  font-family: "raleway", "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.gallery-elem__text {
+  color: #d1d1d1;
+  font-family: "montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.gallery-elem__link,
+.gallery-elem__search {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30%;
+  display: none;
+  outline: none;
+}
+.gallery-elem__link {
+  left: 37%;
+}
+
+.gallery-elem__search {
+  right: 37%;
+}
+
+.gallery__icon {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+.gallery-elem:hover .gallery-elem__title {
+  color: #ffffff;
+}
+.gallery-elem:hover .gallery-elem__text {
+  color: #c7b299;
+}
+.gallery-elem:hover .gallery-elem__img {
+  filter: brightness(30%);
+}
+.gallery-elem:hover .gallery-elem__text-wrap {
+  background-color: #362f2d;
+}
+.gallery-elem:hover .gallery-elem__text-wrap::before {
+  border-bottom: 10px solid #362f2d;
+}
+.gallery-elem:hover .gallery-elem__link {
+  display: block;
+}
+.gallery-elem:hover .gallery-elem__search {
+  display: block;
+}
+.gallery-elem__link:hover .gallery__icon {
+  fill: #c7b299;
+}
+.gallery-elem__search:hover .gallery__icon {
+  fill: #c7b299;
+}
+.gallery-elem__link:active .gallery__icon {
+  fill: #a48d72;
+}
+.gallery-elem__search:active .gallery__icon {
+  fill: #a48d72;
+}
+
+.gallery-link {
+  margin: 0 auto;
 }
