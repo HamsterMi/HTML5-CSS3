@@ -649,6 +649,9 @@
   fill: #ffffff;
 }
 
+.video-button:hover .icon-play{
+  fill: #c7b299;
+}
 .video-description__title {
   color: #ffffff;
   font-family: "raleway", "Arial", sans-serif;
