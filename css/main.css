@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: raleway;
-  src: url(../fonts/raleway-regular.ttf);
+  src: url(../fonts/raleway.ttf);
 }
 
 @font-face {
@@ -259,7 +259,7 @@
 .slider-section__pagination {
   position: absolute;
   bottom: 0;
-  left: 760px;
+  left: 47%;
 }
 
 .pagination__link {
@@ -818,10 +818,12 @@
   margin: 0;
 }
 
-.posts-item_num-text,
-.posts-item_month-text {
+.post-item__text-wrap {
   position: absolute;
   left: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .posts-item_num-text {
@@ -831,17 +833,15 @@
   font-family: "montserrat", "Arial", sans-serif;
   font-size: 24px;
   line-height: 20px;
-  top: 20px;
   padding: 8px 8px;
 }
 
 .posts-item_month-text {
   border-radius: 0 0 3px 3px;
   background-color: #252525;
+  color: #ffffff;
   font-family: "roboto", "Arial", sans-serif;
   font-size: 12px;
-  color: #ffffff;
-  top: 55px;
   padding: 6px 11px;
 }
 
@@ -908,13 +908,34 @@
   color: #ffffff;
 }
 
-.arrow-button {
+.posts-item__link:hover {
+  color: #f3dabf;
+}
+
+.posts-item__link:hover::after {
+  border-left: 4px solid #f3dabf;
+}
+
+.posts-item__link:active {
+  color: #7c6c5e;
+}
+
+.posts-item__link:active::after {
+  border-left: 4px solid #7c6c5e;
+}
+
+.buttons__wrap {
   position: absolute;
+  width: 100%;
+  bottom: 80px;
+  left: 48%;
+}
+.arrow-button {
   border: none;
   background-color: inherit;
   outline: none;
   cursor: pointer;
-  bottom: 80px;
+  padding: 4px;
 }
 
 .posts__icon {
@@ -923,16 +944,51 @@
   height: 22px;
 }
 
-.arrow-button_left {
-  left:48%
+.arrow-button:hover .posts__icon {
+  fill: #c7b299;
 }
-
-.arrow-button_right {
-  left:50%
+.arrow-button:active .posts__icon {
+  fill: #998675;
 }
-
 
 .partners {
   width: 100%;
-  background-image: url();
+  background-image: linear-gradient(
+      to top,
+      rgba(17, 17, 17, 0.7),
+      rgba(17, 17, 17, 0.7)
+    ),
+    url(../img/partners-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(17, 17, 17, 0.7);
+  box-sizing: border-box;
+  padding: 140px 405px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.partners__link {
+  display: block;
+  /*  position: relative; */
+}
+.partners__link:after {
+  position: absolute;
+  content: "";
+  display: none;
+  top: 129px;
+}
+
+.partners__link:hover:after {
+  display: block;
+  background-color: rgba(156, 156, 156, 0.1);
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+}
+
+.partners__link:active .partners__icon {
+  transform: scale(1.3);
 }
