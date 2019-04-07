@@ -28,10 +28,6 @@
   src: url(../fonts/roboto.ttf);
 }
 
-/* *{
-border: 1px solid yellow;
-} */
-
 .container {
   width: 1920px;
   margin: 0 auto;
@@ -181,6 +177,7 @@ border: 1px solid yellow;
   position: absolute;
   top: 95px;
 }
+
 .slider__icon {
   fill: #a2a19f;
 }
@@ -196,9 +193,11 @@ border: 1px solid yellow;
 .slider-section__link_left {
   left: 0;
 }
+
 .slider-section__link_right {
   right: 0;
 }
+
 .slider-section__slider-content {
   display: flex;
   width: 100%;
@@ -285,7 +284,6 @@ border: 1px solid yellow;
 }
 
 .pagination__link:active {
- /*  border: 2px solid #d3c1ad; */
   background-color: #d3c1ad;
 }
 
@@ -1243,7 +1241,6 @@ input[type="checkbox"]:checked ~ .main-nav {
   .menu-list__item {
     margin-right: 0;
     margin-bottom: 5px;
-    /* border: 1px solid #959595; */
   }
 
   .cart-button {
